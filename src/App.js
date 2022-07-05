@@ -4,6 +4,7 @@ import { BrowserRouter as Routes } from 'react-router-dom'
 
 
 import Navbar from './components/Navbar';
+import ClickTracker from './components/ClickTracker';
 
 
 
@@ -14,7 +15,7 @@ function App() {
     <div className="App">
 
     <Routes>
-      <Navbar/>
+      <ClickTracker/>
     </Routes>
       
     </div>
