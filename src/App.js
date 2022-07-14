@@ -1,10 +1,10 @@
-/* import logo from './logo.svg'; */
 import './App.css';
-import { BrowserRouter as Routes } from 'react-router-dom'
-
-
 import Navbar from './components/Navbar';
-import ClickTracker from './components/ClickTracker';
+import ItemListContainer from './components/ItemListContainer';
+import ItemCount from "./components/ItemCount";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+
 
 
 
@@ -12,13 +12,20 @@ import ClickTracker from './components/ClickTracker';
 function App() {
 
   return (
-    <div className="App">
-
-    <Routes>
-      <ClickTracker/>
-    </Routes>
+    <>
       
-    </div>
+      <Navbar />;
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={ <ItemListContainer /> } />
+        </Routes>
+      </BrowserRouter>
+      {/* <ItemCount stock={10} initial={1}/> */}
+      <ItemListContainer greeting={"bienvenidos a tobinstrumentos"} />
+      <hr />
+
+
+    </>
   )
 
 
