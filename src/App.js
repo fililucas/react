@@ -22,8 +22,6 @@ function App() {
 
           <Route path="/products" element={<ItemListContainer />} />
 
-          <Route path="/nav" element={<Navbar />} />
-
           <Route path="/category/:id" element={<ItemListContainer />} />
 
         </Routes>

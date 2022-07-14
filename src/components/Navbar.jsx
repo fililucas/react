@@ -1,7 +1,9 @@
 import CartWidjet from "./CartWidjet";
+import { Link } from 'react-router-dom';
 
-const NavBar  = () => {
-    return (<nav class="navbar bg-dark  justify-content-between navbar-expand-lg navbar-light bg-light">
+
+const NavBar = () => {
+  return (<nav class="navbar bg-dark  justify-content-between navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid barra display-flex justify-content-between">
       <a class="navbar-brand text-white" href="/">tienda</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +18,7 @@ const NavBar  = () => {
       </div>
     </div>
     <CartWidjet />
-  </nav> );
+  </nav>);
 }
- 
-export default NavBar ;
+
+export default NavBar;

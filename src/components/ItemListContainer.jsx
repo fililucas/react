@@ -5,23 +5,23 @@ const ItemListContainer = (props) => {
   const ItemsDATABASE = [{
     "id": 1,
     "producto": "Bmw 128i",
-    "price": 1098,
+    "price": '1.849.000',
     "category": "Deportivo",
-    "stock": 1,
+    "stock": 2,
     "img": "https://www.km77.com/media/fotos/bmw_serie_1_2017_5_puertas_6454_1.jpg"
   }, {
     "id": 2,
     "producto": "producto 2",
-    "price": 1265,
+    "price": '1',
     "category": "Descripción",
-    "stock": 9,
+    "stock": 1,
     "img": ""
   }, {
     "id": 3,
     "producto": "producto 3",
-    "price": 979,
+    "price": '1',
     "category": "Descripción",
-    "stock": 3,
+    "stock": 1,
     "img": ""
   }];
   console.log("%c render itemlistcontainer", "color:green");
