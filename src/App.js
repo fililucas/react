@@ -1,8 +1,9 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import ItemListContainer from './components/ItemListContainer';
-import ItemCount from "./components/ItemCount";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ClickTracker from './components/DesmontarEvento';
+
 
 
 
@@ -26,11 +27,10 @@ function App() {
 
         </Routes>
       </BrowserRouter>
-      {/* <ItemCount stock={10} initial={1}/> */}
 
       <hr />
 
-
+      <ClickTracker />;
     </>
   )
 
